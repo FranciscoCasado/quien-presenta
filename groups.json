@@ -1,0 +1,79 @@
+{
+    "grupos": [
+        {
+            "id": 1,
+            "integrantes": [
+                "Bruno Cavieres L.",
+                "Trinidad Dufey C.",
+                "Camila Figueroa A.",
+                "Nicolás Isla F."
+            ]
+        },
+        {
+            "id": 2,
+            "integrantes": [
+                "Ammi Beltrán T.",
+                "Fernanda Borja Muñoz",
+                "Felipe Campusano",
+                "Gabriel Gonzalez"
+            ]
+        },
+        {
+            "id": 3,
+            "integrantes": [
+                "Sebastian Gonzalez V.",
+                "Ignacio Ortiz",
+                "Gabriel Silva A.",
+                "Ricardo Torres"
+            ]
+        },
+        {
+            "id": 4,
+            "integrantes": [
+                "Benjamín Castro R.",
+                "Rodrigo Navarro M.",
+                "Sebastián Antonio Ojeda Guerra",
+                "Israel Rodriguez"
+            ]
+        },
+        {
+            "id": 5,
+            "integrantes": [
+                "Benjamín Angulo C.",
+                "Roberto Lüders",
+                "Cristian Romero V.",
+                "Benjamin Nicholas Torrealba Troncoso"
+            ]
+        },
+        {
+            "id": 6,
+            "integrantes": []
+        },
+        {
+            "id": 7,
+            "integrantes": [
+                "Pamela Acuña Brizzo",
+                "Álvaro Gallardo",
+                "Vicente Quinteros F.",
+                "Nicolay Soto"
+            ]
+        },
+        {
+            "id": 8,
+            "integrantes": [
+                "Kevin Anezaki L.",
+                "Alan Contreras Montanares",
+                "José Vargas S."
+            ]
+        },
+        {
+            "id": 9,
+            "integrantes": [
+                "Camilo Carreño S.",
+                "Osvaldo Jiménez S.",
+                "Eduardo Moya Briones",
+                "Marcelo Pizarro"
+            ]
+        }
+    ]
+}
