@@ -16,12 +16,17 @@ document.getElementById('import').onclick = function () {
         console.log(e);
         var result = JSON.parse(e.target.result);
         var formatted = JSON.stringify(result, null, 2);
-        document.getElementById('result').value = formatted;
 
         var htmlStructure="";
         result.grupos.forEach(function (element) {
 
-            htmlStructure += "<li>" + element.id + ' ' + element.integrantes + "</li>"
+            htmlStructure += "<div id=group-" + element.id + ">"
+                
+            element.integrantes.forEach(function (element){
+                htmlStructure += "<div>" + element + "</div>"
+            })
+
+            htmlStructure += "</div>"
         });
 
 
