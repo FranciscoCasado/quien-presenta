@@ -20,13 +20,13 @@ document.getElementById('import').onclick = function () {
         var htmlStructure="";
         result.grupos.forEach(function (element) {
 
-            htmlStructure += "<div id=group-" + element.id + ">"
+            htmlStructure += "<div id=group-" + element.id + "> " + element.id +"<ul>"
                 
             element.integrantes.forEach(function (element){
-                htmlStructure += "<div>" + element + "</div>"
+                htmlStructure += "<li>" + element + "</li>"
             })
 
-            htmlStructure += "</div>"
+            htmlStructure += "</ul></div>"
         });
 
 
