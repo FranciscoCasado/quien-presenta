@@ -14,9 +14,8 @@ Selector aleatorio de personas dentro de grupos.
                 "Kris Prott"
             ]
         },
-        ...
         {
-            "id": n,
+            "id": 45,
             "integrantes": [
                 "Quinn Cribbe",
                 "Avis Oliver"
