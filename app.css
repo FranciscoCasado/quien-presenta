@@ -1,9 +1,26 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
 #result {
-    display:block;
-    width:400px;
-    height:200px;
-  }
+  display:block;
+  width:400px;
+  height:200px;
+}
   
-  #import {
-    margin:10px 0;
-  }
+#import {
+  margin:10px 0;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#container > div {
+  margin: 5px;
+  padding: 0.2em;
+  border: thin solid;
+  border-radius: 0.5em;
+}
