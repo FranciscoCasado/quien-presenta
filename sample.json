@@ -1,0 +1,34 @@
+{
+    "grupos": [
+        {
+            "id": 1,
+            "integrantes": [
+                "Cory Hickories",
+                "Kris Prott"
+            ]
+        },
+        {
+            "id": 2,
+            "integrantes": [
+                "Angel Silverberry",
+                "Aaren Lace",
+                "Silver Gooseberry"
+            ]
+        },
+        {
+            "id": 3,
+            "integrantes": [
+                "Mica Snowbell",
+                "Skyler Beaverdam",
+                "Dusk Pincushion"
+            ]
+        },
+        {
+            "id": 4,
+            "integrantes": [
+                "Quinn Cribbe",
+                "Avis Oliver"
+            ]
+        }
+    ]
+}
