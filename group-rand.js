@@ -18,6 +18,7 @@ document.getElementById('import').onclick = function () {
         var formatted = JSON.stringify(result, null, 2);
 
         var htmlStructure="";
+        clearBox('container')
         result.grupos.forEach(function (element) {
 
             htmlStructure += "<div id=group-" + element.id + "> " + element.id +"<ul>"
@@ -35,3 +36,8 @@ document.getElementById('import').onclick = function () {
     }
     fr.readAsText(files.item(0));
 };
+
+function clearBox(elementID)
+{
+    document.getElementById(elementID).innerHTML = "";
+}
