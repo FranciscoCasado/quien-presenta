@@ -18,10 +18,10 @@ document.getElementById('import').onclick = function () {
         var formatted = JSON.stringify(result, null, 2);
 
         var htmlStructure="";
-        clearBox('container')
+        clearBox('container');
         result.grupos.forEach(function (element) {
 
-            htmlStructure += "<div class=group id=group-" + element.id + "> " + element.id 
+            htmlStructure += "<div class=group id=group-" + element.id + "> <div class=group-header> #" + element.id + "</div>"
 
             var person_id = 1;    
             element.integrantes.forEach(function (person_name){
@@ -45,17 +45,17 @@ document.getElementById('group').onclick = function () {
     var total_groups = document.getElementById('container').childElementCount;
     group_id = "group-" + randomInt(1,total_groups);
     clearGroups();
-    document.getElementById(group_id).style.background = 'green';
-    console.log(group_id)
+    clearPeople();
+    document.getElementById(group_id).style.background = '#ccdbfd';
 
 }
 
 document.getElementById('presenter').onclick = function () {
-    console.log(group_id)
-    var total_people = document.getElementById(group_id).childElementCount;
+    var total_people = document.getElementById(group_id).childElementCount -1;
     var person_id = group_id + "-" + randomInt(1,total_people);
     clearPeople();
-    document.getElementById(person_id).style.background = 'yellow';
+    console.log(person_id)
+    document.getElementById(person_id).style.background = '#ffeedd';
 
 }
 
@@ -69,7 +69,7 @@ function clearBox(elementID)
 function clearGroups() {
     var elements = document.getElementsByClassName("group");
     Array.prototype.forEach.call (elements, function(element) {
-        element.style.background = "none";
+        element.style.background = "white";
     });
 }
 
