@@ -38,7 +38,8 @@ function clearPeople() {
     });
 }
 
-/* Highlight a group element */
+/* Highlight a group element
+ * when #group button is clicked */
 document.getElementById('group').onclick = function () {
     "use strict";
     var total_groups = document.getElementById('container').childElementCount;
@@ -52,7 +53,8 @@ document.getElementById('group').onclick = function () {
     document.getElementById(group_id).style.background = '#ccdbfd';
 };
 
-/* Highlight a person inside the current highlighted element */
+/* Highlight a person inside the current highlighted element
+ *  when #presenter button is clicked */
 document.getElementById('presenter').onclick = function () {
     "use strict";
     var total_people = document.getElementById(group_id).childElementCount - 1,
