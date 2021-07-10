@@ -50,7 +50,6 @@ document.getElementById('group').onclick = function () {
     clearPeople();
 
     document.getElementById(group_id).style.background = '#ccdbfd';
-
 };
 
 /* Highlight a person inside the current highlighted element */
