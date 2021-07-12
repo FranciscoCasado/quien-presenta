@@ -2,8 +2,14 @@
 /*jslint devel: true */
 /*global $, jQuery, alert, FileReader*/
 
-/* Global variable for setting group id*/
+/* Global variable for setting group id
+   (probably not the best way to implement this) */
 var group_id = "";
+
+/* Input element handlers*/
+var groupButton = document.getElementById('group'),
+    presenterButton = document.getElementById('presenter'),
+    importButton = document.getElementById('import');
 
 
 var randomProperty = function (obj) {
@@ -40,7 +46,7 @@ function clearPeople() {
 
 /* Highlight a group element
  * when #group button is clicked */
-document.getElementById('group').onclick = function () {
+groupButton.onclick = function () {
     "use strict";
     var total_groups = document.getElementById('container').childElementCount;
 
@@ -55,7 +61,7 @@ document.getElementById('group').onclick = function () {
 
 /* Highlight a person inside the current highlighted element
  *  when #presenter button is clicked */
-document.getElementById('presenter').onclick = function () {
+presenterButton.onclick = function () {
     "use strict";
     var total_people = document.getElementById(group_id).childElementCount - 1,
         person_id = group_id + "-" + randomInt(1, total_people);
@@ -67,7 +73,7 @@ document.getElementById('presenter').onclick = function () {
 
 
 /* Build the HTML elements for groups and people, based on the imported .json file */
-document.getElementById('import').onclick = function () {
+importButton.onclick = function () {
     "use strict";
     var files = document.getElementById('selectFiles').files,
         fr = new FileReader();
